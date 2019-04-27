@@ -1,7 +1,7 @@
 {
   "name": "monokai-grayjack-syntax",
   "theme": "syntax",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "A brighter monokai theme variant for Atom. Forked from monokai neo",
   "keywords": [
     "monokai",
