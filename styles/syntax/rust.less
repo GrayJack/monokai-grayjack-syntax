@@ -3,15 +3,18 @@
         font-style: italic;
     }
 
-    .syntax--unsafe,
+    .syntax--unsafe {
+        color: @red_bright;
+    }
+
+    .syntax--field,
     .syntax--pattern-binding,
     .syntax--match-remaining,
     .syntax--error-propagation {
         color: @brown;
     }
 
-    .syntax--lifetime,
-    .syntax--field {
+    .syntax--lifetime {
         color: @brown;
         font-style: italic;
     }
