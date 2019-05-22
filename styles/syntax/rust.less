@@ -3,16 +3,34 @@
         font-style: italic;
     }
 
-    .syntax--entity.syntax--name.syntax--lifetime,
-    .syntax--storage.syntax--modifier.syntax--lifetime {
+    .syntax--unsafe,
+    .syntax--pattern-binding,
+    .syntax--match-remaining,
+    .syntax--error-propagation {
         color: @brown;
     }
 
-    .syntax--keyword.syntax--self {
+    .syntax--lifetime,
+    .syntax--field {
+        color: @brown;
+        font-style: italic;
+    }
+
+    .syntax--loop-label {
+        color: @brown;
+        text-decoration: underline;
+    }
+
+    .syntax--parameter {
+        color: @orange;
+    }
+
+    .syntax--self {
         color: @orange;
         font-style: italic;
     }
 
+    .syntax--class,
     .syntax--support.syntax--constant {
         color: @blue;
         text-decoration: underline;
@@ -26,4 +44,7 @@
         color: @orange;
     }
 
+    .syntax--attribute-name {
+        color: @yellow;
+    }
 }
