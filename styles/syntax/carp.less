@@ -1,13 +1,32 @@
 .syntax--source.syntax--carp {
+    .syntax--symbol,
     .syntax--constant.syntax--keyword {
         color: @orange;
     }
 
+    .syntax--attribute {
+        color: @orange;
+        text-decoration: underline;
+    }
+
     .syntax--module {
+        color: @brown;
+        font-style: italic;
+    }
+
+    .syntax--enum {
+        color: @blue;
+    }
+
+    .symtax--type {
         color: @cyan;
+        font-style: italic;
     }
 
     .syntax--ref,
+    .syntax--reference,
+    .syntax--fn_ref,
+    .syntax--quote,
     .syntax--func-ref,
     .syntax--copy {
         color: @brown;
