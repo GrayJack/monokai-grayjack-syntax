@@ -27,12 +27,17 @@
   color: @purple;
 
   &.syntax--character.syntax--escape,
-  &.syntax--numeric {
+  &.syntax--numeric,
+  &.syntax--variable {
     color: @purple;
   }
 
   &.syntax--other.syntax--color {
     color: @cyan;
+  }
+
+  &.syntax--other.syntax--symbol {
+    color: @orange;
   }
 }
 
@@ -71,6 +76,14 @@
 
   .syntax--source {
     color: @syntax-text-color;
+
+    .syntax--source.syntax--ruby.syntax--embedded {
+      color: @yellow_bright;
+    }
+  }
+
+  &.syntax--other.syntax--link {
+    color: @cyan;
   }
 }
 
@@ -86,6 +99,8 @@
 
     &.syntax--variable,
     &.syntax--parameters,
+    &.syntax--separator,
+    &.syntax--seperator,
     &.syntax--array {
       color: @syntax-text-color;
     }

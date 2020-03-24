@@ -27,3 +27,29 @@
 @syntax-color-added: @green;
 @syntax-color-modified: @orange;
 @syntax-color-removed: @red;
+
+// For language entity colors
+@syntax-color-variable:   @brown;
+@syntax-color-constant:   @purple;
+@syntax-color-property:   @very-light-gray;
+@syntax-color-value:      @very-light-gray;
+@syntax-color-function:   @green;
+@syntax-color-method:     @green;
+@syntax-color-class:      @cyan;
+@syntax-color-keyword:    @red;
+@syntax-color-tag:        @yellow_bright;
+@syntax-color-attribute:  @yellow;
+@syntax-color-import:     @red_bright;
+@syntax-color-snippet:    @blue;
+
+
+// Custom Syntax Variables -----------------------------------
+// Don't use in packages
+
+// needs to be semi-transparent to show search results
+@syntax-cursor-line: fade(@syntax-gutter-background-color-selected, 50%);
+
+@syntax-deprecated-fg: darken(@syntax-color-modified, 50%);
+@syntax-deprecated-bg: @syntax-color-modified;
+@syntax-illegal-fg:    white;
+@syntax-illegal-bg:    @syntax-color-removed;
