@@ -1,4 +1,5 @@
 .syntax--source.syntax--janet {
+    .syntax--contant.syntax--key,
     .syntax--constant.syntax--keyword {
         color: @orange;
     }
@@ -7,7 +8,21 @@
         color: @cyan;
     }
 
+    .syntax--shorthand,
     .syntax--shortfn {
         color: @brown;
+    }
+
+    .syntax--modkey {
+        color: @red_bright;
+    }
+
+    .syntax--module {
+        color: @brown;
+        font-style: italic;
+    }
+
+    .syntax--doc-str {
+        color: @yellow;
     }
 }
